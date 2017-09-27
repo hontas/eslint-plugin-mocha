@@ -13,7 +13,7 @@ $ npm i eslint --save-dev
 Next, install `eslint-plugin-mocha`:
 
 ```
-$ npm install eslint-plugin-mocha --save-dev
+$ npm install https://github.com/hontas/eslint-plugin-mocha --save-dev
 ```
 
 **Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-mocha` globally.
@@ -36,14 +36,14 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "mocha/rule-name": 2
+        "mocha/disallow-only": 2
     }
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
+* disallow-only
 
 
 

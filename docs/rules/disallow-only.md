@@ -1,17 +1,19 @@
 # Disallow the use of .only in tests (disallow-only)
 
-Please describe the origin of the rule here.
+It's great to use .only during development but could
+be a disaster if checked in. This rule can help with that.
 
 
 ## Rule Details
 
-This rule aims to...
+This rule aims to tell you when you left .only in your tests
 
 Examples of **incorrect** code for this rule:
 
 ```js
 
-// fill me in
+describe.only('should pass', function() {});
+it.only('should pass', function() {});
 
 ```
 
@@ -19,18 +21,15 @@ Examples of **correct** code for this rule:
 
 ```js
 
-// fill me in
+describe('should pass', function() {});
+it('should pass', function() {});
 
 ```
 
-### Options
-
-If there are any options, describe them here. Otherwise, delete this section.
-
 ## When Not To Use It
 
-Give a short description of when it would be appropriate to turn off this rule.
+Never.
 
 ## Further Reading
 
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
+[mochajs docs on exclusive tests](https://mochajs.org/#exclusive-tests)
