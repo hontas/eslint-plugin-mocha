@@ -12,8 +12,8 @@ Examples of **incorrect** code for this rule:
 
 ```js
 
-describe.only('should pass', function() {});
-it.only('should pass', function() {});
+describe.only('should fail', () => {});
+it.only('should fail', () => {});
 
 ```
 
@@ -21,8 +21,8 @@ Examples of **correct** code for this rule:
 
 ```js
 
-describe('should pass', function() {});
-it('should pass', function() {});
+describe('should pass', () => {});
+it('should pass', () => {});
 
 ```
 
